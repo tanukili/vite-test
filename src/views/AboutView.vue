@@ -13,6 +13,7 @@ export default {
     };
   },
   mounted() {
+    console.log('ok');
     console.log(import.meta.env.VITE_TEXT);
     const url = import.meta.env.VITE_PATH;
     this.$http.get(url).then((res) => {
